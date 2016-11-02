@@ -135,8 +135,8 @@ void checkRow(sudokuGrid *mat, int x, int y) {
 }
 
 void setSo(sudokuGrid *mat, int x, int y) {
-	int j = 0;
-	for (int i = 0; i < 9; i++) {
+	int j = 9;
+	for (int i = 1; i < 9; i++) {
 		if (mat->posN[y].pos[x][i] == 1) {
 			j = i;
 		}
